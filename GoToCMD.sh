@@ -12,6 +12,7 @@ if [[ -z "$(dpkg -s make | grep Status)" ]]
         exit 1
 fi
 
+make
 cp MMF /bin
 mv MMF /sbin
 echo Adieu Monde cruel !
